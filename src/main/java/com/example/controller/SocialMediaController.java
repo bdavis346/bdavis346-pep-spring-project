@@ -70,6 +70,7 @@ public class SocialMediaController {
 
     @GetMapping("/accounts/{id}/messages")
     public List<Message> getAllMessagesForUser(@PathVariable int id) {
+        
         return messageService.getAllMessagesForUser(id);
     }
 
